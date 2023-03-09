@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animation </title>
+
+    <!-- Animation etale jyare aapde koi pan website open kariye to auto matic je kaam tathu hoy ene animation kahevay -->
+    <!-- Animation ko apne two type se likh sakte hai -->
+    <!-- 1. Type alag alag rite pan laki skay -->
+    <!--  -->
+    <!-- animation-name: xyz / name lkavanu kai pan; -->
+    <!-- animation-duration: 2s / atala samay ma animation purur thayi jse; -->
+    <!-- animation-iteration-count: 2;- aa lakso to side open karo 2 vakhat j thse -->
+    <!-- animation-iteration-count: infinite;- aama site open karo chaluj rahe unlimited time -->
+    <!--  -->
+    <!-- 2. Type 3 nu cumbine -->
+
+    <!-- animation: name duration count; -->
+    <!--  -->
+    <!--  -->
+    <!-- Animation ne work karva mate style nu under -->
+    <!-- @keyframes hem -->
+    <!-- aavu lakavu padse toj kaa thse -->
+    <!-- @keyframes na under bracket on karine -->
+    <!-- 2 rit thi lakhi sakay -->
+    <!--  -->
+    <!-- 1. type -->
+
+    <!-- from lakine pachi braket on/close -->
+    <!-- from etale ke pahela aapde su use kariyu 6 -->
+    <!-- To lakine pachi braket on/close -->
+    <!-- To etale ke have aapde su use karvu 6 -->
+
+    <!-- 2. Type -->
+    <!-- aama tane 0 thi layine tamne uanter aapvu pade 100% sudi -->
+    <!-- tamne vadhare layers joyiye to o thi 10 nu unter layine 100 sudi complate karvu pade -->
+    <!-- @keyframes hem -->
+    <!-- 0%   {} -->
+    <!-- 20%  {} -->
+    <!-- 40%  {} -->
+    <!-- 60%  {} -->
+    <!-- 80%  {} -->
+    <!-- 100% {} -->
+
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            margin: 100px auto;
+            animation-name: hem;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        /* @keyframes hem {
+            from {
+                background-color: black;
+                transform: scale(1);
+            }
+            to {
+                background-color: red;
+                transform: scale(2s);
+            }
+        } */
+        
+        @keyframes hem {
+            0% {
+                background-color: blue;
+            }
+            20% {
+                background-color: green;
+                transform: translate(200px, 0);
+            }
+            40% {
+                background-color: red;
+                transform: translateY(200px);
+            }
+            60% {
+                background: linear-gradient(red, blue);
+                border-radius: 50%;
+                height: 0;
+                width: 0
+            }
+            80% {
+                background-color: white;
+                box-shadow: 0 0 34px black
+            }
+            100% {
+                background: url(https://media.istockphoto.com/id/1427249962/photo/tropical-leaves-abstract-green-leaf-texture-in-garden-nature-background.jpg?b=1&s=170667a&w=0&k=20&c=40KcV7mbAQWihuO0At8GSOTIKp-TvIoHGIhurHBeUq0=);
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
